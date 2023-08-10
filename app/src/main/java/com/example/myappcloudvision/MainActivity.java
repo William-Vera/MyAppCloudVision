@@ -191,6 +191,7 @@ public class MainActivity extends AppCompatActivity {
                     paint.setColor(Color.RED);
                     paint.setStyle(Paint.Style.STROKE);
                     paint.setStrokeWidth(5);
+                    paint.setTextSize(80);
                     float x,y,z;
                     Vertex vertice;
                     FaceAnnotation rostro;
@@ -220,6 +221,7 @@ public class MainActivity extends AppCompatActivity {
                             int right = vertices.get(2).getX();
                             int bottom = vertices.get(2).getY();
                             Rect rect = new Rect(left, top, right, bottom);
+                            canvas.drawText("hombre",top, bottom, paint );
                             canvas.drawRect(rect, paint);
                         }
 
