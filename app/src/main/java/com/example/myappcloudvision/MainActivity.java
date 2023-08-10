@@ -221,7 +221,7 @@ public class MainActivity extends AppCompatActivity {
                             int right = vertices.get(2).getX();
                             int bottom = vertices.get(2).getY();
                             Rect rect = new Rect(left, top, right, bottom);
-                            canvas.drawText("hombre",top, bottom, paint );
+                            canvas.drawText("hombre",top, bottom+80, paint );
                             canvas.drawRect(rect, paint);
                         }
 
